@@ -1,3 +1,5 @@
+CROSS_COMPILE	:= 
+CROSS			:=	$(CROSS_COMPILE)
 obj-m			+=	nxmain.o
 
 nxmain-objs		:=	startup.o		\
@@ -5,7 +7,7 @@ nxmain-objs		:=	startup.o		\
 
 ccflags-y		+=	-g
 
-all:
+all: 
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 
 clean:

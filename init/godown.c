@@ -1,7 +1,8 @@
 #include <linux/kernel.h>
 #include <linux/module.h>
 
-#include "include/utils.h"
+#include "../include/utils.h"
+#include "../workqueue/queue_ng.h"
 
 void cleanup_module( void )
 {
@@ -20,6 +21,7 @@ void cleanup_module( void )
 	prints( "stoping nettgain queue\n" );
 	// remove nettgain queue
     prints( "removing nettgain queue\n" );
+	queue_ng_destroy();
 	// release miscellaneous memory items
 	prints( "releasing miscellaneous memory items\n" );
 	// remove proc entries
