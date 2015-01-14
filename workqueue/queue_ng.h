@@ -24,7 +24,7 @@
 #define MESSAGE_USED_IGNORE     0xefffffff
 
 #define warparound_inc(n, limit) { ++(n); if ((n) == (limit)) (n) = 0; }
-#define MAX_QUEUE_ENTRIES	6000
+#define MAX_QUEUE_ENTRIES	10000
 
 struct msg_elements {
 	unsigned long	type;

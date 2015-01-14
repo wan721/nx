@@ -28,10 +28,11 @@ __attribute__((section("__versions"))) = {
 	{ 0xb0cbe4cb, "kfree_skb" },
 	{ 0x6fe340df, "kmem_cache_alloc_trace" },
 	{ 0x67f7403e, "_raw_spin_lock" },
-	{ 0xe45f60d8, "__wake_up" },
+	{ 0xefdd5a63, "ktime_get_ts" },
 	{ 0x37a0cba, "kfree" },
 	{ 0x622fa02a, "prepare_to_wait" },
 	{ 0x75bb675a, "finish_wait" },
+	{ 0xdf4c8767, "ns_to_timeval" },
 };
 
 static const char __module_depends[]
