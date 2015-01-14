@@ -1,0 +1,15 @@
+# Ignore OS generated files #
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Always-ignore files and folders #
+*.swp
+._*
+*~
+
+# Temp Ignore
+backup/*
+*.zip
+*.bak
